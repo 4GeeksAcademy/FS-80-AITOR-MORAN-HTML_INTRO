@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column; /*Nos lo coloca en una sola columna */
+    align-items: center; /*Centra el contenido de la columna*/
+}
+
+
+
+.card{
+    width: 50%;
+    background-color: white;
+    margin: 0.5rem 0;
+
+}
+
+.card-user-info{
+    display: flex;/*coloca los dos elementos hijos h3 y span uno al lado del otro*/
+    align-items: center; /*coloca los elementos a la misma altura en el eje x*/
+    padding: 0 0.5rem; /*El 0 involucra arriba y abajo y el 0,5 derecha izquierda. Cuando se dan dos valores es así*/
+}
+
+.card-user-info2{
+    display: block;
+}
+
+.card-img{
+    width: 100%; /*Entonces coge la referencia del padre, por eso le damos a 100%*/
+    
+}
+
+.card-img-holder{
+    margin: 0; /*Esto sirve para consumir todo el tamaño del ancho disponible, quitándole los margenes que vienen por defecto*/
+}
+
+.card-text {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.title {
+    padding-left: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.parrafo {
+    padding-left: 0.5rem;
+    margin-top: 0;
+}
