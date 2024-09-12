@@ -4,11 +4,27 @@ body{
 
 .wrapper{
     display: flex;
-    flex-direction: column; /*Nos lo coloca en una sola columna */
-    align-items: center; /*Centra el contenido de la columna*/
+    flex-direction: column; 
+    align-items: center; 
 }
 
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
 
+.user-info{
+    display: flex;
+    align-items:  center;
+}
+
+.user>h3, .user>p{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0.5rem;
+}
 
 .card{
     width: 50%;
@@ -17,23 +33,13 @@ body{
 
 }
 
-.card-user-info{
-    display: flex;/*coloca los dos elementos hijos h3 y span uno al lado del otro*/
-    align-items: center; /*coloca los elementos a la misma altura en el eje x*/
-    padding: 0 0.5rem; /*El 0 involucra arriba y abajo y el 0,5 derecha izquierda. Cuando se dan dos valores es así*/
-}
-
-.card-user-info2{
-    display: block;
-}
-
 .card-img{
-    width: 100%; /*Entonces coge la referencia del padre, por eso le damos a 100%*/
+    width: 100%;
     
 }
 
 .card-img-holder{
-    margin: 0; /*Esto sirve para consumir todo el tamaño del ancho disponible, quitándole los margenes que vienen por defecto*/
+    margin: 0; 
 }
 
 .card-text {
@@ -50,6 +56,8 @@ body{
 .parrafo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    padding-left: 0.5rem;
+    margin-top: 0;
 }
 
 .title {
@@ -57,7 +65,9 @@ body{
     margin-bottom: 0rem;
 }
 
-.parrafo {
-    padding-left: 0.5rem;
-    margin-top: 0;
+.icons{
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+    justify-content: space-between;
 }
+
